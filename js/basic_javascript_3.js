@@ -10,17 +10,17 @@ function subtraction_function() {
 
 function multiplication()   {
     var simple_math = 8 * 4;
-    document.getElementById("math").innerHTML = "8 x 4 =" + "simple_math";
+    document.getElementById("math").innerHTML = "8 x 4 =" + simple_math;
 }
 
 function division()     {
     var simple_math = 72 / 9;
-    document.getElementById("math").innerHTML = "72 / 9" + "simple_math";
+    document.getElementById("math").innerHTML = "72 / 9 =" + simple_math;
 }
 
 function more_math()    {
-    var simple_Math = (1 +4) * 10 / 2 -5;
-    document.getElementById("math").innerHTML = "1 plus 4, multiplied by 10, divided in half and then subtracted by 5 equals" + simple_math;
+    var simple_math = (1 +4) * 10 / 2 -5;
+    document.getElementById("math").innerHTML = "1 plus 4, multiplied by 10, divided in half and then subtracted by 5 equals:" + simple_math;
 }
 
 function modulus_Operator() {
@@ -35,11 +35,11 @@ function negation_Operator()    {
 
 var X = 5;
 X++;
-document.alert(X);
+window.alert(X);
 
 var X = 5.25;
 X--;
-document.alert(X);
+window.alert(X);
 
 window.alert(Math.random());
 
