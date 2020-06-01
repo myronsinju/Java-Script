@@ -1,7 +1,7 @@
 function Ride_Function()    {
     var Height, Can_ride;
     Height = document.getElementById("Height").value;
-    can_ride = (Height < 52) ? "You are too short":"You are tall enough";
+    Can_ride = (Height < 52) ? "You are too short":"You are tall enough";
     document.getElementById("Ride").innerHTML = Can_ride + "to ride.";
 }
 
@@ -17,7 +17,7 @@ var Erik = new Vehicle("Ford", "Pinto", 1971, "Mustard");
 function myFunction()   {
     document.getElementById("Keywords_and_Constructors").innerHTML =
     "Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model +
-    " manufactured in " + Erik_Vehicle_Year;
+    " manufactured in " + Erik.Vehicle_Year;
 }
 
 function count_Function()   {
