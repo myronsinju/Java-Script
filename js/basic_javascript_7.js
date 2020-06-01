@@ -15,7 +15,7 @@ function get_Date() {
 }
 
 function Age_Function() {
-    Age = document.getElementById("Age").nodeValue;
+    Age = document.getElementById("Age").value;
     if (Age >= 21)  {
         Drink = "You are old enough to drink!";
     }
