@@ -19,20 +19,21 @@ function for_Loop()    {
 }
 
 function array_Function()   {
+    var monkey_Picture = [];
     monkey_Picture[0] = "sleeping";
     monkey_Picture[1] = "playing";
     monkey_Picture[2] = "eating";
-    monkey_picture[3] = "oo oo ahh ahh";
-    document.getElementById("Monkey").innerHTML = "in this picture, the monkey is " +
-    monkey_Picture[4] + ".";
+    monkey_Picture[3] = "oo oo ahh ahh";
+    document.getElementById("Array").innerHTML = "in this picture, the monkey is " +
+    monkey_Picture[2] + ".";
 }
 
 function constant_function()    {
     const Musical_Instrument = {type:"Guitar", brand:"Fender", color:"Black"};
     Musical_Instrument.color = "Blue";
     Musical_Instrument.price = "$900";
-    document.getElementById("constnat").innerHTML = "The cost of the " +
-    Musical_Instrument.type + "was" + Musical_Instrument.price;
+    document.getElementById("constant").innerHTML = "The cost of the " +
+    Musical_Instrument.type + " was " + Musical_Instrument.price;
 }
 
 var X = 82;
