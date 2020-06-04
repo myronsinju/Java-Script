@@ -73,26 +73,26 @@ function Handle_Operator(Next_Operator) {
     };
 
 
-function Calculator_Reset() {
-    Calculator.Display_Value = '0';
-    Calculator.First_Operand = null;
-    Calculator.Wait_Second_Operand = false;
-    Calculator.operator = null;
+function calculator_Reset() {
+    calculator.Display_Value = '0';
+    calculator.First_Operand = null;
+    calculator.Wait_Second_Operand = false;
+    calculator.operator = null;
 }
 
 // this function updates the screen with the contents of Display_Value
 function Update_Display() {
     const display = document.querySelector('.calculator-screen');
-    display.value = Calculator.Display_Value;
+    display.value = calculator.Display_Value;
 }
 
 Update_Display();
 //this section monitors button clicks
 const keys = document.querySelector('.calculator-keys');
-keys.addEventListener('click', event) =>  {
+keys.addEventListener('click', (event) =>  {
     // the target variable is an object that represents the element
     // that was clicked
-    const ( target ) = event;
+    const { target } = event;
     // if the element that was clicked on is not a button, exit the function
     if (!target.matches('button')) {
         return;
@@ -111,11 +111,11 @@ keys.addEventListener('click', event) =>  {
     }
     //ensures that AC clears the numbers from the Calculator
     if (target.classList.contains('all-clear')) {
-        Calculator_Reset();
+        calculator_Reset();
         Update_Display();
         return;
     }
 
     Input_Digit(target.value);
     Update_Display();
-}
+})
